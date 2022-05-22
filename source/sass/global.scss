@@ -1,0 +1,125 @@
+body {
+  min-width: 1920px;
+  margin: 0;
+  font-family:  "OpenSans", 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .promo-card__title {
+//   font-family: "Gilroy";
+//   font-weight: 800;
+//   font-style: normal;
+//   font-size: 47px;
+//   line-height: 58px;
+// }
+
+.container {
+  max-width: 1220px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   word-wrap: normal;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+.hide {
+  display: none;
+}
+
+.more,
+.write-us{
+  font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+  font-weight: 800;
+  line-height: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding-top: 12px;
+  z-index: 1;
+}
+
+.more::before,
+.write-us::before {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 8px;
+  background-color: $bgc-yellow-saturated;
+  position: absolute;
+  top: 17px;
+  left: -2px;
+  z-index: -1;
+}
+
+.more:hover,
+.write-us:hover {
+  background-color: $bgc-yellow-saturated;
+
+  &::before {
+    display: none;
+  }
+}
+
+.more:active,
+.write-us:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::before {
+    display: none;
+  }
+}
