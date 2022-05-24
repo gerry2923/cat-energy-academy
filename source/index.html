@@ -11,11 +11,12 @@
 
 <body>
 	<header class="main-header">
-		<nav class="main-header__nav">
+		<nav class="main-header__nav container">
 			
 			<a href="" class="main-header__logo">
-				<object data="../img/logo-mobile.svg" type="image/svg+xml" width="" height=""></object>
+				<object data="../img/logo-mobile.svg" type="image/svg+xml" width="191" height="38"></object>
 			</a>
+
 			<!-- /** меню гамбургер **/ -->
 			<ul class="main-header__site-nav">
 				<li class="main-header__site-nav-item">
@@ -37,20 +38,22 @@
 		<h1 class="visually-hidden">Онлайн магазин функционального питания для кошек «Cat Energy»</h1>
 
 		<section class="promo">
-			<h2 class="promo__title">Функциональное питание для котов</h2>
+			<div class="container">
+				<h2 class="promo__title">Функциональное питание для котов</h2>
+				<p class="promo__subtitle">Занялся собой? Займись котом!</p>
 
-			<p class="promo__subtitle">Занялся собой? Займись котом!</p>
+				<div class="promo__picture">
+					<img src="../img/can-ce-banner-mobile.webp" width="280" height="270" alt="CatEnergyPro с курицей">
+				</div>
 
-			<div class="promo__picture">
-				<img src="../img/can-ce-banner-mobile.webp" width="280" height="270" alt="CatEnergyPro с курицей">
+				<div class="promo__button">
+					<a href="#" class="button button_green">подобрать программу</a>
+				</div>
 			</div>
-
-			<div class="promo__button">
-				<a href="#" class="button button_green">подобрать программу</a>
-			</div>
+			
 		</section>
 		
-		<section class="diets">
+		<section class="diets container">
 			<h2 class="visually-hidden">Наши диетические направления</h2>
 
 			<ul class="diets__list">
@@ -72,7 +75,7 @@
 			</ul>
 		</section>
 		
-		<section class="advantages">
+		<section class="advantages container">
 			<h2 class="advantages__title">Как это работает</h2>
 
 			<ul class="advantages__list">
@@ -93,56 +96,90 @@
 		</section>
 		
 		<section class="example">
-			<div class="example__block">
-				<h2 class="example__title">Живой пример</h2>
+			<div class="container">
+				<div class="example__block">
+					<h2 class="example__title">Живой пример</h2>
 
-				<p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+					<p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-				<table class="example__table">
-					<tr class="example__table-description">
-						<td>снижение веса</td>
-						<td>затрачено времени</td>
-					</tr>
+					<table class="example__table">
+						<tr class="example__table-description">
+							<td>снижение веса</td>
+							<td>затрачено времени</td>
+						</tr>
 
-					<tr class="example__table-numbers">
-						<td>5 кг</td>
-						<td>60 дней</td>
-					</tr>
-				</table>
-<!-- 
-				<dl class="example__numbers">
-					<dt>снижение веса</dt>
-					<dd>5 кг</dd>
+						<tr class="example__table-numbers">
+							<td>5 кг</td>
+							<td>60 дней</td>
+						</tr>
+					</table>
+	<!-- 
+					<dl class="example__numbers">
+						<dt>снижение веса</dt>
+						<dd>5 кг</dd>
 
-					<dt>затрачено времени</dt>
-					<dd>60 ДНЕЙ</dd>
-				</dl>
--->		</div>
-
-			<div class="example__block">
-				<div class="example__pictuer example__picture_before">
-					<img src="" alt="">
-				</div>
-				<div class="example__picture example__picture_after">
-					<img src="" alt="">
+						<dt>затрачено времени</dt>
+						<dd>60 ДНЕЙ</dd>
+					</dl>
+-->		
 				</div>
 
-				<div class="example__picture-toggle">
-					<button class="slider__button" type="button">Было</button>
-					<div class="slider__scale">
-						<div class="slider__bar"></div>
+				<div class="example__block">
+					<div class="example__pictuer example__picture_before">
+						<img src="" alt="">
 					</div>
-					<button class="slider__button" type="button">Стало</button>
+					<div class="example__picture example__picture_after">
+						<img src="" alt="">
+					</div>
+
+					<div class="example__picture-toggle">
+						<button class="slider__button" type="button">Было</button>
+						<div class="slider__scale">
+							<div class="slider__bar"></div>
+						</div>
+						<button class="slider__button" type="button">Стало</button>
+					</div>
 				</div>
 			</div>
 			
+			
 		</section>
-
 
 	</main>
 
 	<footer class="mian-footer">
-		
+
+		<div class="main-footer__contacts container">
+			<p class="mian-footer__text">приглашаем к сотрудничеству дилеров!</p>
+			<address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+		</div>
+
+		<div class="main-footer__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e15b6c2dfb3a8f77c702db59eac100320582b5cf9816d177e8f72daa8b0503e&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+		</div>
+
+
+		<div class="main-footer__nav container">
+			<a href="#" class="main-footer__logo-title">
+				<object data="../img/logo-title-mobile.svg" type="image/svg+xml" width="128" height="24"></object>
+			</a>
+
+			<ul class="main-footer__social">
+				<li class="main-footer__social-item">
+					<a href="#" class="main-footer__social-link">В контакте</a>
+				</li>
+				<li class="main-footer__social-item">
+					<a href="#" class="main-footer__social-link">Instagram</a>
+				</li>
+				<li class="main-footer__social-item">
+					<a href="#" class="main-footer__social-link">facebook</a>
+				</li>
+			</ul>
+
+			<div class="main-footer__rights">
+				<a href="#" class="main-footer__right-link">HTML Academy</a>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
