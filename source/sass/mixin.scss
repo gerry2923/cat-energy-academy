@@ -1,0 +1,5 @@
+@mixin lineout ($width: 1px, $color: darkorange){
+	outline: $width solid $color;
+	outline-offset: -$width;
+
+}

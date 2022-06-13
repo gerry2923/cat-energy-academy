@@ -1,0 +1,44 @@
+.button {
+	display: block;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 0.875em;
+	line-height: 1.29em;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	height: 40px;
+	padding-top: 11px;
+}
+
+.button_green {
+	background-color: $bgd-green;
+}
+
+.catalog-link {
+	display: block;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: black;
+	text-align: left;
+	height: 40px;
+	padding-top: 11px;
+
+	// background-color: $bgc-light;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 24px;
+		height: 12px;
+		margin-left: 15px;
+		background-image: url("../img/arrow-short.svg");
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+	}
+}
+

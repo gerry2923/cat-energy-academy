@@ -1,30 +1,37 @@
-// @font-face {
-// 	font-family: "OpenSans";
-// 	font-weight: normal;
-// 	font-style: normal;
-// 	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-// }
+// 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'Arial Regular';
+    src: url('ArialMT.eot');
+    src: url('ArialMT.eot?#iefix') format('embedded-opentype'),
+    url('ArialMT.woff') format('woff'),
+    url('ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-// @font-face {
-// 	font-family: "OpenSans";
-// 	font-weight: 300;
-// 	font-style: normal;
-// 	src: url('../fonts/OpenSans-Light.ttf') format('truetype');
-// }
+// Helvetica, sans-serif
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('Oswald-Regular.eot');
+    src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Oswald-Regular.woff') format('woff'),
+    url('Oswald-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-// @font-face {
-// 	font-family: "Gilroy";
-// 	font-weight: 300;
-// 	font-style: normal;
-// 	src: url('../fonts/Gilroy-Light.woff') format('woff'), 
-// 			url('../fonts/Gilroy-Light.ttf') format('truetype');
-// }
+@font-face {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/Oswald-Medium.ttf") format('truetype');
+}
 
-// @font-face {
-// 	font-family: "Gilroy";
-// 	font-weight: 800;
-// 	font-style: normal;
-// 	src: url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
-// 			url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
-// }
+@font-face {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Oswald-Regular.ttf") format('truetype');
+}
+
 

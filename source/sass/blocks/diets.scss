@@ -1,0 +1,102 @@
+.diets *:not(.diets__item){
+	// @include lineout(1px, blue);
+}
+
+
+.diets__list {
+	margin: 22px 0px 0px 0px;
+	padding: 0px 0px;
+}
+
+.diets__item {
+	// @include lineout(1px, cyan);
+
+	list-style: none;
+	margin: 0px 0px 21px 0px;
+	width: 100%;
+	height: 266px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: $bgc-light;
+
+	&:first-child .diets__item-title::before {
+		width: 50px;
+		height: 53px;
+		background-image: url("../img/cat_slim-icon.svg");
+	}
+
+	&:last-child .diets__item-title {
+		padding-left: 13px;
+
+		&::before {
+			width: 67px;
+			height: 50px;
+			margin-right: 12px;
+			background-image: url("../img/cat_pro-icon.svg");
+		}
+	}
+}
+
+.diets__item-title {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 96px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 23px;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.54em;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		text-align: left;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+		margin-right: 19px;
+	}
+}
+
+.diets__item-text {
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	// align-content: space-between;
+	flex-grow: 1;
+	margin: 0px 0px 0px 0px;
+	font-family: Arial, sans-serif;
+	font-size: 0.875em;
+	line-height: 1.29em;
+	font-weight: 400;
+	color: $text-color-dark;
+	padding-left: 21px;
+	padding-right: 17px;
+	padding-top: 0px;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: $bgc-light-1;
+		margin-top: auto;
+		// background-color: darkred;
+		// margin-top: 22px;
+		// margin-bottom: 8px;
+
+	}
+
+}
+
+.diets__item-link {
+	padding-top: 7px;
+	padding-left: 20px;
+	height: 57px;
+}
+
+
