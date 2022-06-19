@@ -1,7 +1,9 @@
-.diets *:not(.diets__item){
+.diets {
+	& *:not(.diets__item){
 	// @include lineout(1px, blue);
+	}
+	margin-bottom: 20px;
 }
-
 
 .diets__list {
 	margin: 22px 0px 0px 0px;
@@ -26,14 +28,18 @@
 		background-image: url("../img/cat_slim-icon.svg");
 	}
 
-	&:last-child .diets__item-title {
-		padding-left: 13px;
+	&:last-child {
+		margin-bottom: 0px;
 
-		&::before {
-			width: 67px;
-			height: 50px;
-			margin-right: 12px;
-			background-image: url("../img/cat_pro-icon.svg");
+		& .diets__item-title {
+			padding-left: 13px;
+
+			&::before {
+				width: 67px;
+				height: 50px;
+				margin-right: 12px;
+				background-image: url("../img/cat_pro-icon.svg");
+			}
 		}
 	}
 }
@@ -65,8 +71,6 @@
 .diets__item-text {
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
-	// align-content: space-between;
 	flex-grow: 1;
 	margin: 0px 0px 0px 0px;
 	font-family: Arial, sans-serif;
@@ -85,10 +89,6 @@
 		height: 1px;
 		background-color: $bgc-light-1;
 		margin-top: auto;
-		// background-color: darkred;
-		// margin-top: 22px;
-		// margin-bottom: 8px;
-
 	}
 
 }
